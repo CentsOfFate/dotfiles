@@ -2,10 +2,6 @@
 
 ![alt tag](https://github.com/charliedalldorf/dotfiles/blob/master/screenshots/ss1.png)
 
-## Screenshot 2
-
-## Screenshot 3
-
 ### Purpose
 
 * Portable: Can replicate current Workstation configuration to other setups.

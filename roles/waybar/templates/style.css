@@ -52,8 +52,12 @@ window#waybar {
     color:      @alert;
 }
 
-#mode, #battery, #cpu, #memory, #network, #pulseaudio, #backlight, #custom-backup, #custom-pkg, #custom-storage, #custom-vpn, #custom-zfs-trim, #custom-zfs-scrub, #custom-systemd, #temperature, #clock {
+#mode, #battery, #cpu, #rofi, #memory, #network, #pulseaudio, #backlight, #custom-backup, #custom-pkg, #custom-storage, #custom-vpn, #custom-zfs-trim, #custom-zfs-scrub, #custom-systemd, #temperature, #clock {
     margin:     0px 16px 0px 0px;
+}
+
+#rofi {
+    border-bottom: 2px solid @red;
 }
 
 #cpu {

@@ -1,11 +1,11 @@
 
 {
     "layer": "top",
-    "position": "bottom",
-    "height": 22,
+    "position": "top",
+    "height": 25,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "network", "pulseaudio"],
+    "modules-right": ["cpu", "memory", "network", "pulseaudio",],
     "sway/window": {
         "max-length": 50
     },
@@ -19,11 +19,7 @@
         "2": [],
         "3": [],
         "4": [],
-        "5": [],
-        "6": [],
-        "7": [],
-        "8": [],
-        "9": []
+        "5": []
         }
     },
     "custom/ping": {
@@ -39,6 +35,10 @@
             "activated": "",
             "deactivated": ""
         }
+    },
+    "rofi": {
+	"format": "",
+	"on-click": "rofi -show drun -show-icons"
     },
     "cpu": {
         "interval": 3,

@@ -1,6 +1,12 @@
 # Arch Linux - Sway Window Manager Configuration
 
+## Sway + Waybar + Termite
+
 ![alt tag](https://github.com/charliedalldorf/dotfiles/blob/master/screenshots/ss1.png)
+
+## Rofi Launcher
+
+![alt tag](https://github.com/charliedalldorf/dotfiles/blob/master/screenshots/ss2.png)
 
 ### Purpose
 

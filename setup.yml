@@ -12,9 +12,6 @@
     - role: waybar
       tags: waybar
 
-    - role: zsh
-      tags: zsh
-
     - role: wallpapers
       tags: wallpapers
       

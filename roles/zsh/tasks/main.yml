@@ -1,5 +1,0 @@
----
-- name: Copy Oh-My-Zsh Configuration
-  template:
-    src: .zshrc
-    dest: .zshrc

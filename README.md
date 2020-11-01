@@ -1,6 +1,6 @@
 # Arch Linux - Sway Window Manager Configuration
 
-## Screenshot 1
+![alt tag](https://github.com/charliedalldorf/dotfiles/blob/master/screenshots/sway.png)
 
 ## Screenshot 2
 

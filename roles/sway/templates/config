@@ -27,7 +27,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/elise/Downloads/small-memory-lp-1920x1080.jpg fill
+output * bg ~/Wallpapers/wall.jpg fill
 
 # Example configuration:
 

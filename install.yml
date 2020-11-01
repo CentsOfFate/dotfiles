@@ -7,6 +7,6 @@
   - name: Install Applications
     pacman:
         name: ['sway', 'termite', 'waybar', 'dmenu', 'zsh', 
-        'git', 'code', 'ranger']
+        'git', 'code', 'ranger', 'ttf-font-awesome']
         state: present
 

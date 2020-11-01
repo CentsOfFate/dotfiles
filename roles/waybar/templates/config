@@ -4,8 +4,8 @@
     "position": "bottom",
     "height": 22,
     "modules-left": ["sway/workspaces"],
-    "modules-center": [],
-    "modules-right": ["cpu", "memory", "network", "pulseaudio", "clock"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "network", "pulseaudio"],
     "sway/window": {
         "max-length": 50
     },

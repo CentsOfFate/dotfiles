@@ -2,7 +2,19 @@
 - name: Create Configuration Files
   hosts: laptop
 
-  tasks:
-  - name: Run Termite Create Playbook
-    include: roles/termite/tasks/create.yml
+  roles:
+    - role: termite
+      tags: termite
+
+    - role: sway
+      tags: sway
+
+    - role: waybar
+      tags: waybar
+
+    - role: zsh
+      tags: zsh
+
+    - role: wallpapers
+      tags: wallpapers
       

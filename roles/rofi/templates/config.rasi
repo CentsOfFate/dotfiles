@@ -1,0 +1,10 @@
+/** Configured For Applets **/
+
+configuration {
+  show-icons: true;
+  icon-theme: "Flat-Remix";
+  font: "hack 18";
+  combi-modi: "drun";
+  theme: "Arc-Dark";
+
+}

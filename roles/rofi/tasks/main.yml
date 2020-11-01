@@ -1,0 +1,10 @@
+---
+- name: Create Rofi Config Directory
+    file:
+    path: ~/.config/rofi/
+    state: directory
+
+- name: Copy Configuration file
+    template:
+    src: config.rasi
+    dest: ~/.config/rofi/config.rasi

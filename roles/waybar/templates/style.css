@@ -1,0 +1,81 @@
+/* colorscheme */
+@define-color background rgba(34, 34, 34, 0.9); 
+@define-color active rgba(68, 68, 68, 0.8);
+@define-color warning rgba(243, 249, 157, 1);
+@define-color alert rgba(255, 92, 87, 1);
+@define-color white rgba(239, 240, 235, 1);
+@define-color darkgrey rgba(73, 73, 73, 1);
+@define-color grey rgba(146, 146, 146, 1);
+
+@define-color red rgba(255, 92, 87, 1);
+@define-color yellow rgba(243, 249, 157, 1);
+@define-color blue rgba(10, 108, 245, 1);
+@define-color purple rgba(159, 120, 255, 1);
+@define-color green rgba(90, 247, 142, 1);
+@define-color cyan rgba(154, 237, 254, 1);
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Hack";
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+    color:      @white;
+    background: @background;	
+}
+
+#workspaces {
+  margin-left: 3px;
+}
+
+#workspaces button {
+    background: transparent;
+    padding:    0 10px;
+    color:   @white;
+    min-width:  20px;
+    border-top: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.visible {
+    color:      @white;
+}
+#workspaces button.focused {
+    border-top: 1px solid @active;
+    border-bottom: 2px solid @yellow;
+    background: @active;
+}
+#workspaces button.urgent {
+    color:      @alert;
+}
+
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #backlight, #custom-backup, #custom-pkg, #custom-storage, #custom-vpn, #custom-zfs-trim, #custom-zfs-scrub, #custom-systemd, #temperature, #clock {
+    margin:     0px 16px 0px 0px;
+}
+
+#cpu {
+    border-bottom: 2px solid @yellow;
+ }
+
+#memory {
+    border-bottom: 2px solid @red;
+}	
+
+#pulseaudio {
+    border-bottom: 2px solid @green;
+}
+
+#clock {
+    border-bottom: 2px solid @blue;
+}
+
+#network {
+    border-bottom: 2px solid @purple;
+}
+
+#network.speed {
+    border-bottom: 0px;
+}

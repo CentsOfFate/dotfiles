@@ -1,0 +1,10 @@
+---
+- name: Create Termite Config Directory
+  file:
+    path: ~/.config/termite/
+    state: directory
+
+- name: Copy Configuration file
+  template:
+    src: config
+    dest: ~/.config/termite/config

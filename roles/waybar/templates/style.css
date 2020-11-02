@@ -7,24 +7,24 @@
 @define-color darkgrey rgba(73, 73, 73, 1);
 @define-color grey rgba(146, 146, 146, 1);
 
-@define-color red rgba(255, 92, 87, 1);
-@define-color yellow rgba(243, 249, 157, 1);
+@define-color red rgba(180, 0, 0, 1);
+@define-color orange rgba(255, 165, 0, 1);
 @define-color blue rgba(10, 108, 245, 1);
 @define-color purple rgba(159, 120, 255, 1);
-@define-color green rgba(90, 247, 142, 1);
+@define-color green rgba(76, 166, 76, 1);
 @define-color cyan rgba(154, 237, 254, 1);
 
 * {
   border: none;
   border-radius: 0;
-  font-family: "Hack";
-  font-size: 14px;
+  font-family: "Hack", "Font Awesome 5 Free Regular", "Font Awesome 5 Free Solid", "Font Awesome 5 Brands";
+  font-size: 16px;
   min-height: 0;
 }
 
 window#waybar {
     color:      @white;
-    background: @background;	
+    background: @background;
 }
 
 #workspaces {
@@ -45,24 +45,20 @@ window#waybar {
 }
 #workspaces button.focused {
     border-top: 1px solid @active;
-    border-bottom: 2px solid @yellow;
+    border-bottom: 2px solid @orange;
     background: @active;
 }
 #workspaces button.urgent {
     color:      @alert;
 }
 
-#mode, #battery, #cpu, #rofi, #memory, #network, #pulseaudio, #backlight, #custom-backup, #custom-pkg, #custom-storage, #custom-vpn, #custom-zfs-trim, #custom-zfs-scrub, #custom-systemd, #temperature, #clock {
+#mode, #battery, #cpu, #rofi, #memory, #network, #pulseaudio, #backlight, #custom-backup, #custom-pkg, #custom-storage, #custom-vpn, #custom-zfs-trim, #custom-zfs-scrub, #custom-systemd, #temperature, #clock, #custom-powermenu {
     margin:     0px 16px 0px 0px;
 }
 
-#rofi {
-    border-bottom: 2px solid @red;
-}
-
 #cpu {
-    border-bottom: 2px solid @yellow;
- }
+    border-bottom: 2px solid @orange;
+}
 
 #memory {
     border-bottom: 2px solid @red;
@@ -83,3 +79,4 @@ window#waybar {
 #network.speed {
     border-bottom: 0px;
 }
+

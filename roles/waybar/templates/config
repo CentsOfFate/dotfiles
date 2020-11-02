@@ -1,11 +1,11 @@
 
 {
-    "layer": "top",
+    "layer": "bottom",
     "position": "top",
     "height": 25,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "network", "pulseaudio",],
+    "modules-right": ["cpu", "memory", "pulseaudio", "network"],
     "sway/window": {
         "max-length": 50
     },
@@ -15,25 +15,11 @@
     "sway/workspaces": {
         "all-outputs": true,
         "persistent_workspaces": {
-        "1": [],
+        "1": [], 
         "2": [],
         "3": [],
         "4": [],
         "5": []
-        }
-    },
-    "custom/ping": {
-        "exec": "$HOME/.config/waybar/scripts/ping.sh",
-        "interval": 3,
-        "tooltip": false,
-        "format": "{} ms 龍"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "tooltip": false,
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
         }
     },
     "rofi": {
@@ -46,7 +32,7 @@
     },
     "memory": {
         "interval": 3,
-        "format": " {percentage}%"
+        "format": "&#xf538; {percentage}%"
     },
     "custom/kernel": {
         "exec": "uname -r",
@@ -73,7 +59,7 @@
         "on-click": "kitty -1 -e htop"
     },
     "clock": {
-        "format": " {:%a %b %d, %Y  %H:%M:%S}",
+        "format": " {:%a %m/%d/%y - %r}",
         "tooltip": false,
 	"interval": 1,
         "on-click": "kitty -1 -e calcurse"
@@ -97,14 +83,10 @@
     },
     "network": {
         "format-wifi": "{signalStrength}% ",
-        "format-ethernet": " Wired",
+        "format-ethernet": " {ifname}: {ipaddr}",
         "format-disconnected": " ⚠",
         "tooltip": false,
         "on-click": "kitty -1 -e nmtui"
-    },
-    "sway/window": {
-        "format": "  {}",
-        "tooltip": false,
-        "max-length": 50
     }
 }
+

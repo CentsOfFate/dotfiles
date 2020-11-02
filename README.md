@@ -34,16 +34,25 @@ cd dotfiles
 cp hosts \etc\ansible\hosts
 ```
 
------
-
 Add Hosts to \etc\ansible\hosts
+
+Example:
+```
+[workstation]
+arch@192.168.1.3
+
+[remote]
+manjaro@192.168.1.9
+```
+
+-----
 
 #### 3. Configure SSH
 
 Copy SSH Key to all hosts.
 
 ```
-ssh-copy-id example@192.168.1.22
+ssh-copy-id manjaro@192.168.1.9
 ```
 
 -----

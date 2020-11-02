@@ -66,6 +66,8 @@ Run **install.yml** if you have a fresh Arch Linux install or to make sure you h
 ansible-playbook install.yml -kK
 ```
 
+-----
+
 #### 5. Run setup.yml
 
 ```

@@ -82,3 +82,11 @@ ansible-playbook install.yml -kK
 ```
 ansible-playbook setup.yml -kK
 ```
+
+#### Optional
+
+If changes are made to existing configuration files, run **sync.yml** to sync config files to Repository.
+
+```
+ansible-laybook sync.yml
+```

@@ -1,0 +1,29 @@
+---
+- name: Sync Current Waybar Config to Ansible
+  hosts: workstation
+  tasks:
+
+  - name: Sync Waybar Config
+    copy:
+      src: ~/.config/waybar/config
+      dest: ~/Projects/dotfiles/roles/waybar/templates/
+
+  - name: Sync Waybar Style
+    copy:
+      src: ~/.config/waybar/style.css
+      dest: ~/Projects/dotfiles/roles/waybar/templates/
+
+  - name: Sync Sway Config
+    copy:
+      src: ~/.config/sway/config
+      dest: ~/Projects/dotfiles/roles/sway/templates/
+
+  - name: Sync Rofi Config
+    copy:
+      src: ~/.config/rofi/config.rasi
+      dest: ~/Projects/dotfiles/roles/rofi/templates/      
+
+  - name: Sync Termite Config
+    copy:
+      src: ~/.config/termite/config
+      dest: ~/Projects/dotfiles/roles/termite/templates/        
